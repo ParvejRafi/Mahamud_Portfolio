@@ -508,12 +508,19 @@ button, input, textarea, select { font-family: inherit; }
   z-index: 3;
 }
 
-/* Responsive hero photo */
+/* Responsive hero layout */
 @media (max-width: 900px) {
+  #hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 110px 0 60px;
+    display: flex;
+    align-items: center;
+  }
   .hero-split {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 40px;
+    gap: 30px;
   }
   .hero-photo-wrap {
     width: 220px;
@@ -522,12 +529,62 @@ button, input, textarea, select { font-family: inherit; }
   }
   .hero-photo {
     width: 200px;
-    height: 240px;
+    height: 265px;
+    object-position: center top;
   }
   .hero-photo-badge { left: -10px; bottom: 10px; }
   .hero-photo-tag { right: -5px; top: 10px; }
-  .hero-eyebrow, .hero-tags, .hero-cta { justify-content: center; }
-  .hero-tags { justify-content: center; }
+  
+  /* Centered elements */
+  .hero-eyebrow, .hero-cta { justify-content: center; }
+  .hero-eyebrow-line { display: none; }
+  .hero-eyebrow { justify-content: center; margin-bottom: 12px; }
+
+  /* Scale title font sizes down on mobile to prevent overflow & overlap */
+  .hero-firstname,
+  .hero-lastname {
+    font-size: clamp(2.3rem, 7.5vw, 4.4rem) !important;
+    line-height: 1.05;
+  }
+  
+  /* Verticalized Broadcast bar for mobile screens */
+  .hero-discipline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-discipline-bar {
+    width: 100%;
+    height: 4px;
+    min-height: 4px;
+    margin-right: 0;
+  }
+  .hero-discipline-inner {
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px 12px;
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255,0.08);
+    border-top: none;
+    min-height: auto;
+  }
+  .hero-discipline-sep {
+    display: none;
+  }
+  .hero-discipline-rec {
+    margin-left: 0;
+    margin-top: 4px;
+  }
+  .hero-typewriter {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Center CTA Buttons */
+  .hero-cta {
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
 }
 
 .hero-eyebrow {

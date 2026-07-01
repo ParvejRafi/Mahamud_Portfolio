@@ -140,8 +140,22 @@ galleryTabs.forEach(tab => {
     galleryTabs.forEach(t => t.classList.remove('active'));
     galleryPanels.forEach(p => p.classList.remove('active'));
     tab.classList.add('active');
+    
     const target = document.getElementById(tab.dataset.target);
-    if (target) target.classList.add('active');
+    if (target) {
+      target.classList.add('active');
+      
+      // Auto smooth scroll to the tabs list top, leaving space for sticky navbar
+      const tabsMenu = document.querySelector('.gallery-tabs');
+      if (tabsMenu) {
+        const offset = 85; // sticky navbar offset
+        const topPos = tabsMenu.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({
+          top: topPos,
+          behavior: 'smooth'
+        });
+      }
+    }
   });
 });
 

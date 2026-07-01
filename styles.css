@@ -1079,7 +1079,7 @@ button, input, textarea, select { font-family: inherit; }
    EXPERIENCE SECTION — DEEP SLATE PROFESSIONAL DESIGN
    ============================================================ */
 #experience {
-  background: #0e1117;
+  background: #090d16;
   position: relative;
   overflow: hidden;
 }
@@ -1143,7 +1143,7 @@ button, input, textarea, select { font-family: inherit; }
 
 /* Cards: rich dark glass with red left border + glowing edge */
 .exp-card {
-  background: linear-gradient(135deg, #171d27 0%, #131820 100%);
+  background: linear-gradient(135deg, #141a29 0%, #101522 100%);
   border: 1px solid rgba(255,255,255,0.07);
   border-left: 3px solid var(--red);
   border-radius: 6px;
@@ -1793,7 +1793,7 @@ button, input, textarea, select { font-family: inherit; }
    SOCIAL MEDIA MANAGER
    ============================================================ */
 #social {
-  background: var(--black);
+  background: #090d16;
   position: relative;
   overflow: hidden;
 }

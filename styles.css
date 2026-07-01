@@ -168,6 +168,14 @@ button, input, textarea, select { font-family: inherit; }
   background: rgba(255,255,255,0.1);
   transform: translateY(-2px);
 }
+#hero .btn-outline {
+  color: #0c1a30;
+  border-color: rgba(12, 26, 48, 0.6);
+}
+#hero .btn-outline:hover {
+  border-color: #0c1a30;
+  background: rgba(12, 26, 48, 0.08);
+}
 .btn-dark {
   background: var(--black);
   color: var(--white);
@@ -219,10 +227,15 @@ button, input, textarea, select { font-family: inherit; }
   height: var(--nav-h);
   display: flex;
   align-items: center;
+  background: rgba(9, 15, 26, 0.88); /* Always glassy dark navy to contrast with light blue hero and match experience */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
   transition: background 0.4s, box-shadow 0.4s, backdrop-filter 0.4s;
 }
 #navbar.scrolled {
-  background: rgba(17,17,17,0.96);
+  background: rgba(9, 15, 26, 0.96);
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 20px rgba(0,0,0,0.4);
 }
@@ -363,7 +376,7 @@ button, input, textarea, select { font-family: inherit; }
   transform: scale(1.04);
   animation: heroZoom 14s ease-out forwards;
   display: block;
-  filter: brightness(0.85) contrast(1.08);
+  filter: brightness(1.1) contrast(1.02) opacity(0.9); /* Brightened and set opacity to make the camera setup extremely clear */
 }
 @keyframes heroZoom { from { transform: scale(1.1); } to { transform: scale(1); } }
 
@@ -372,15 +385,15 @@ button, input, textarea, select { font-family: inherit; }
   inset: 0;
   background:
     linear-gradient(to right,
-      rgba(8,8,8,1.0)   0%,
-      rgba(8,8,8,0.92)  30%,
-      rgba(8,8,8,0.60)  55%,
-      rgba(8,8,8,0.15)  80%,
-      rgba(8,8,8,0.05) 100%
+      rgba(215, 230, 245, 0.98) 0%,
+      rgba(215, 230, 245, 0.90) 35%,
+      rgba(215, 230, 245, 0.70) 60%,
+      rgba(215, 230, 245, 0.35) 85%,
+      rgba(215, 230, 245, 0.15) 100%
     ),
     linear-gradient(to top,
-      rgba(8,8,8,0.7) 0%,
-      transparent 45%
+      rgba(215, 230, 245, 0.4) 0%,
+      transparent 50%
     );
 }
 
@@ -430,7 +443,7 @@ button, input, textarea, select { font-family: inherit; }
 }
 .hero-photo-ring-2 {
   inset: -26px;
-  border-color: rgba(255,255,255,0.1);
+  border-color: rgba(12, 26, 48, 0.15); /* Standout ring on light blue background */
   border-width: 1.5px;
   animation-duration: 16s;
   animation-direction: reverse;
@@ -495,10 +508,10 @@ button, input, textarea, select { font-family: inherit; }
   position: absolute;
   top: 24px;
   right: -10px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(12, 26, 48, 0.85); /* Darker glass fill for high text contrast */
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,0.15);
-  color: rgba(255,255,255,0.85);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.9);
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -620,23 +633,25 @@ button, input, textarea, select { font-family: inherit; }
 .hero-greeting {
   font-family: var(--font-body);
   font-size: clamp(0.9rem, 1.8vw, 1.1rem);
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.55);
+  color: #3b4e6a; /* Darker slate for readability on light blue */
   margin-bottom: 6px;
 }
 .hero-firstname {
   font-size: clamp(3.5rem, 9vw, 7.5rem);
-  color: var(--white);
+  color: #0c1a30; /* Contrast dark navy */
   display: block;
   letter-spacing: 0.02em;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.6);
 }
 .hero-lastname {
   font-size: clamp(3.5rem, 9vw, 7.5rem);
-  color: var(--white);
+  color: #0c1a30; /* Contrast dark navy */
   display: block;
   letter-spacing: 0.02em;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.6);
 }
 .hero-dot { color: var(--red); }
 
@@ -760,9 +775,11 @@ button, input, textarea, select { font-family: inherit; }
   position: relative;
   overflow: hidden;
   border-left: 4px solid var(--red);
-  background: rgba(200,16,46,0.08);
-  border-top: 1px solid rgba(200,16,46,0.2);
-  border-bottom: 1px solid rgba(200,16,46,0.2);
+  background: rgba(9, 15, 26, 0.85); /* Glassy dark navy for high item contrast */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
   height: 36px;
   display: flex;
   align-items: center;
@@ -835,7 +852,7 @@ button, input, textarea, select { font-family: inherit; }
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  color: rgba(255,255,255,0.5);
+  color: #3b4e6a; /* Dark slate text for scroll indicator */
   font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -843,7 +860,7 @@ button, input, textarea, select { font-family: inherit; }
 .scroll-mouse {
   width: 24px;
   height: 38px;
-  border: 2px solid rgba(255,255,255,0.3);
+  border: 2px solid rgba(15, 26, 48, 0.45); /* Darker border for light background */
   border-radius: 12px;
   position: relative;
 }

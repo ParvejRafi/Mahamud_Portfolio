@@ -695,10 +695,10 @@ button, input, textarea, select { font-family: inherit; }
   min-height: 44px;
 }
 .hero-discipline-label {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 0.65rem;
   font-weight: 700;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--red);
   white-space: nowrap;
@@ -713,10 +713,10 @@ button, input, textarea, select { font-family: inherit; }
 
 /* Typewriter text */
 .hero-typewriter {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: clamp(0.78rem, 1.6vw, 0.96rem);
-  font-weight: 700;
-  letter-spacing: 0.2em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--white);
   flex: 1;
@@ -724,7 +724,7 @@ button, input, textarea, select { font-family: inherit; }
 }
 /* Blinking cursor */
 .hero-cursor {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: clamp(0.78rem, 1.6vw, 0.96rem);
   color: var(--red);
   font-weight: 300;
@@ -762,10 +762,10 @@ button, input, textarea, select { font-family: inherit; }
   50% { opacity: 0.15; }
 }
 .hero-discipline-rec span {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 0.6rem;
   font-weight: 800;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.15em;
   color: rgba(255,255,255,0.75);
   text-transform: uppercase;
 }
@@ -822,10 +822,10 @@ button, input, textarea, select { font-family: inherit; }
   100% { transform: translateX(-50%); }
 }
 .hero-ticker-item {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.85);
   padding: 0 28px;

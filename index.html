@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahamud Al Hasan | Media &amp; Communication Portfolio</title>
+  <meta name="description" content="I'm Mahamud Al Hasan, a passionate Media and Communication student at Albukhary International University, Malaysia. With 3+ years of experience in digital marketing, graphic design, and videography, I transform ideas into impactful visual stories." />
+  <meta name="keywords" content="Mahamud Al Hasan, Media, Communication, Portfolio, Videography, Journalism, Graphic Design, AIU" />
+  <meta name="author" content="Mahamud Al Hasan" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mahamud Al Hasan | Media & Communication Portfolio" />
+  <meta property="og:description" content="Media & Communication student — Content Creation, Journalism, Social Media, Public Relations." />
+  <meta property="og:type" content="website" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23C8102E' rx='12'/><text y='.9em' font-size='70' x='50%25' text-anchor='middle' fill='white' font-family='Arial Black'>M</text></svg>" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Preload hero image for instant first paint -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1800&auto=format&fit=crop&q=80" fetchpriority="high" />
+  <!-- Preload profile photo -->
+  <link rel="preload" as="image" href="images/mypic.jpeg" fetchpriority="high" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<nav id="navbar" aria-label="Main Navigation">
+  <div class="container nav-inner">
+
+    <a href="#hero" class="nav-logo" aria-label="Back to top">MAH<span>.</span></a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#social">Social</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<nav id="mobile-menu" class="mobile-menu" aria-label="Mobile Navigation">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#social">Social</a>
+  <a href="#content-creation">Content</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+<!-- ============================================================
+     SECTION 1 — HERO
+     ============================================================ -->
+<section id="hero" aria-label="Hero — Introduction">
+
+  <!-- REPLACE: Hero background — swap for your own cinematic BTS / studio photo -->
+  <div class="hero-bg" role="img" aria-label="Cinematic broadcast studio background">
+    <img
+      src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1800&auto=format&fit=crop&q=80"
+      alt="Behind-the-scenes broadcast studio"
+      fetchpriority="high"
+      loading="eager"
+      decoding="async"
+      class="hero-bg-img"
+    />
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-noise"></div>
+
+  <div class="container hero-content">
+    <div class="hero-split">
+
+      <!-- LEFT: Text -->
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line"></div>
+          <span>Media &amp; Communication Portfolio</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-greeting">Hello, I'm</span>
+          <span class="hero-firstname">Mahamud</span>
+          <span class="hero-lastname">Al Hasan<span class="hero-dot">.</span></span>
+        </h1>
+
+        <!-- Broadcast Lower-Third: Typewriter Cycling Role -->
+        <div class="hero-lower-third">
+
+          <!-- Chyron: Cycling Typewriter -->
+          <div class="hero-discipline">
+            <div class="hero-discipline-bar"></div>
+            <div class="hero-discipline-inner">
+              <span class="hero-discipline-label">MEDIA PROFESSIONAL</span>
+              <div class="hero-discipline-sep"></div>
+              <span class="hero-typewriter" id="heroTypewriter" aria-live="polite"></span><span class="hero-cursor" aria-hidden="true">|</span>
+              <div class="hero-discipline-rec">
+                <span>ON AIR</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Tags: Infinite Scrolling News Ticker -->
+          <div class="hero-ticker-wrap" aria-label="Areas of expertise">
+            <div class="hero-ticker-track" id="heroTickerTrack">
+              <span class="hero-ticker-item">● Content Creation</span>
+              <span class="hero-ticker-item">● Journalism</span>
+              <span class="hero-ticker-item">● Social Media Manager</span>
+              <span class="hero-ticker-item">● Public Relations</span>
+              <span class="hero-ticker-item">● Videography</span>
+              <span class="hero-ticker-item">● Graphic Design</span>
+              <!-- Duplicate for seamless loop -->
+              <span class="hero-ticker-item" aria-hidden="true">● Content Creation</span>
+              <span class="hero-ticker-item" aria-hidden="true">● Journalism</span>
+              <span class="hero-ticker-item" aria-hidden="true">● Social Media Manager</span>
+              <span class="hero-ticker-item" aria-hidden="true">● Public Relations</span>
+              <span class="hero-ticker-item" aria-hidden="true">● Videography</span>
+              <span class="hero-ticker-item" aria-hidden="true">● Graphic Design</span>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" aria-label="View my work">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline" aria-label="Go to contact section">
+            Contact Me
+          </a>
+        </div>
+      </div><!-- /hero-text -->
+
+      <!-- RIGHT: Profile Photo -->
+      <div class="hero-photo-wrap" aria-label="Profile photo of Mahamud Al Hasan">
+        <div class="hero-photo-ring" aria-hidden="true"></div>
+        <div class="hero-photo-ring hero-photo-ring-2" aria-hidden="true"></div>
+        <!-- REPLACE: Place your own photo named 'hero_profile.jpg' inside the 'images' folder -->
+        <img
+          src="images/mypic.jpeg"
+          alt="Mahamud Al Hasan — Media and Communication Student"
+          loading="eager"
+          fetchpriority="high"
+          class="hero-photo"
+        />
+        <div class="hero-photo-badge" aria-label="3 plus years experience">
+          <span class="hero-badge-num">3+</span>
+          <span class="hero-badge-label">Years Exp.</span>
+        </div>
+        <div class="hero-photo-tag" aria-hidden="true">AIU · Malaysia</div>
+      </div><!-- /hero-photo-wrap -->
+
+    </div><!-- /hero-split -->
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="scroll-mouse"></div>
+    <span>Scroll</span>
+  </div>
+
+  <div class="hero-accent-bar" aria-hidden="true"></div>
+
+</section>
+
+
+<!-- ============================================================
+     SECTION 2 — ABOUT ME
+     ============================================================ -->
+<section id="about" class="section-pad" aria-label="About Mahamud Al Hasan">
+  <div class="container">
+
+    <div class="about-grid">
+
+      <!-- Left: Profile Photo -->
+      <div class="about-photo-wrap reveal-left">
+        <!-- REPLACE: Place your own photo named 'profile_about.jpg' inside the 'images' folder -->
+        <img
+          class="about-photo"
+          src="images/mypic.jpeg"
+          alt="Mahamud Al Hasan — Profile Photo"
+          loading="lazy"
+        />
+        <div class="about-photo-frame" aria-hidden="true"></div>
+        <div class="about-badge" aria-label="3 plus years of experience">
+          <div class="num">3+</div>
+          <div class="label">Years of<br>Experience</div>
+        </div>
+      </div>
+
+      <!-- Right: Bio -->
+      <div class="about-right reveal-right">
+
+        <p class="section-label">Who I Am</p>
+        <h2 class="section-title">ABOUT <span>ME</span></h2>
+
+        <p class="about-bio">
+          I'm <strong>Mahamud Al Hasan</strong>, a passionate Media and Communication student at
+          <strong>Albukhary International University</strong>, Malaysia. With <strong>3+ years of experience</strong>
+          in digital marketing, graphic design, and videography, I transform ideas into impactful visual stories.
+          My passion lies in turning ideas into visuals that speak louder than words. Every frame, shot, and story
+          I create is a step toward inspiring others and exploring the limitless power of media.
+        </p>
+
+        <!-- Education Card -->
+        <div class="edu-card" aria-label="Education details">
+          <div class="edu-school">Albukhary International University</div>
+          <div class="edu-degree">Bachelor in Media and Communication (Honours)</div>
+          <div class="edu-meta">
+            <span aria-label="Year 2022 to Present">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              2022 – Present
+            </span>
+            <span aria-label="Location: Malaysia">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Alor Setar, Malaysia
+            </span>
+            <span aria-label="CGPA 3.65">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              CGPA 3.65
+            </span>
+          </div>
+        </div>
+
+        <!-- Tools Strip -->
+        <p class="tools-title">Tools &amp; Software</p>
+        <div class="tools-row" role="list" aria-label="Software tools used">
+          <div class="tool-chip" role="listitem">
+            <div class="tool-dot" aria-hidden="true"></div>
+            Adobe Premiere Pro
+          </div>
+          <div class="tool-chip" role="listitem">
+            <div class="tool-dot" aria-hidden="true"></div>
+            Adobe Illustrator
+          </div>
+          <div class="tool-chip" role="listitem">
+            <div class="tool-dot" aria-hidden="true"></div>
+            Adobe Photoshop
+          </div>
+          <div class="tool-chip" role="listitem">
+            <div class="tool-dot" aria-hidden="true"></div>
+            Canva
+          </div>
+          <div class="tool-chip" role="listitem">
+            <div class="tool-dot" aria-hidden="true"></div>
+            CapCut
+          </div>
+        </div>
+
+      </div><!-- /about-right -->
+    </div><!-- /about-grid -->
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 3 — EXPERIENCE
+     ============================================================ -->
+<section id="experience" class="section-pad" aria-label="Work Experience">
+  <!-- Ghost Watermark -->
+  <div class="exp-watermark" aria-hidden="true">CAREER</div>
+
+  <div class="container">
+
+    <div class="reveal">
+      <p class="section-label">Career</p>
+      <h2 class="section-title">MY <span>EXPERIENCE</span></h2>
+      <p class="section-subtitle">Roles that shaped my media career across student organizations.</p>
+    </div>
+
+    <div class="exp-grid">
+
+      <!-- Role 01 -->
+      <article class="exp-card reveal delay-1" aria-label="Media Advisor role">
+        <div class="exp-number" aria-hidden="true">01</div>
+        <div class="exp-period">2025 – Present</div>
+        <h3 class="exp-role">Media Advisor</h3>
+        <p class="exp-org">Bangladeshi Students Community AIU (BASCA)</p>
+        <p class="exp-desc">
+          Provide strategic advisory on community branding, mentor the design and production teams, and oversee major digital and cultural campaigns.
+        </p>
+        <div class="exp-skills">
+          <span class="exp-skill-tag">Strategic PR</span>
+          <span class="exp-skill-tag">Brand Direction</span>
+          <span class="exp-skill-tag">Mentorship</span>
+        </div>
+      </article>
+
+      <!-- Role 02 -->
+      <article class="exp-card reveal delay-2" aria-label="Media Head role">
+        <div class="exp-number" aria-hidden="true">02</div>
+        <div class="exp-period">2023 – 2024</div>
+        <h3 class="exp-role">Media Head</h3>
+        <p class="exp-org">AIU Residence Council, Albukhary International University</p>
+        <p class="exp-desc">
+          Led the media committee, directed social media content planning, designed event promotional materials, and coordinated community outreach programs.
+        </p>
+        <div class="exp-skills">
+          <span class="exp-skill-tag">Social Media Strategy</span>
+          <span class="exp-skill-tag">Team Leadership</span>
+          <span class="exp-skill-tag">Graphic Design</span>
+        </div>
+      </article>
+
+      <!-- Role 03 -->
+      <article class="exp-card reveal delay-3" aria-label="Production Director role">
+        <div class="exp-number" aria-hidden="true">03</div>
+        <div class="exp-period">2025 – Present</div>
+        <h3 class="exp-role">Production Director</h3>
+        <p class="exp-org">MediaTech 3Zero Club</p>
+        <p class="exp-desc">
+          Direct video productions, oversee video shoots and edit workflows, manage live broadcast operations, and supervise technical crews.
+        </p>
+        <div class="exp-skills">
+          <span class="exp-skill-tag">Video Production</span>
+          <span class="exp-skill-tag">Broadcasting</span>
+          <span class="exp-skill-tag">Crew Management</span>
+        </div>
+      </article>
+
+      <!-- Role 04 -->
+      <article class="exp-card reveal delay-4" aria-label="Exco of Well-Being role">
+        <div class="exp-number" aria-hidden="true">04</div>
+        <div class="exp-period">2024 – 2025</div>
+        <h3 class="exp-role">Exco of Well-Being</h3>
+        <p class="exp-org">AIU Peers Club</p>
+        <p class="exp-desc">
+          Managed visual content for mental health awareness campaigns, structured supportive peer workshops, and organized community wellness events.
+        </p>
+        <div class="exp-skills">
+          <span class="exp-skill-tag">Public Relations</span>
+          <span class="exp-skill-tag">Campaign Outreach</span>
+          <span class="exp-skill-tag">Event Coordination</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 4 — FEATURED VIDEO PROJECTS
+     ============================================================ -->
+<section id="projects" class="section-pad" aria-label="Featured Video Projects">
+  <div class="container">
+
+    <div class="projects-header reveal">
+      <p class="section-label">Filmography</p>
+      <h2 class="section-title">FEATURED <span>PROJECTS</span></h2>
+      <p class="section-subtitle">Documentary films, short films, and broadcast productions.</p>
+    </div>
+
+    <!-- Main 4 Project Cards -->
+    <div class="projects-grid" role="list" aria-label="Featured video projects">
+
+      <!-- PROJECT 1: PENSOL -->
+      <article class="project-card" role="listitem" aria-label="PENSOL Documentary Film 2025">
+        <div class="project-thumb">
+          <!-- REPLACE: Place image 'pensol.jpeg' inside 'images' folder -->
+          <img
+            src="images/pensol.jpeg"
+            alt="PENSOL — A Documentary Film exploring the endangered Lanoh cultural heritage and the Pensol nose flute"
+            loading="lazy"
+          />
+          <div class="project-thumb-overlay">
+            <a href="https://drive.google.com/file/d/1WbGlfR2kXwPAjjYOjp7IMCKdwcGEWcM9/view" target="_blank" rel="noopener noreferrer" class="play-btn" aria-label="Watch PENSOL documentary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </a>
+          </div>
+          <div class="project-year-badge" aria-label="Year 2025">2025</div>
+          <div class="project-type-badge">Documentary</div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">PENSOL</h3>
+          <p class="project-role">Director &nbsp;·&nbsp; Sound Design &nbsp;·&nbsp; Storyboard &nbsp;·&nbsp; Shootingboard Artist</p>
+          <p class="project-desc">
+            This documentary explores the endangered heritage of the Lanoh, an Orang Asli group at risk of cultural
+            extinction, through their unique musical artifact — the Pensol, a nose flute embodying their artistic and
+            storytelling traditions. By highlighting the Lanoh's cultural significance and the Pensol's craftsmanship,
+            the film raises awareness about preserving indigenous traditions and calls for action to safeguard their legacy.
+          </p>
+          <p class="project-meta">Produced for EMC2133 Broadcast Feature and Documentary — Albukhary International University</p>
+          <div class="project-footer">
+            <a href="https://drive.google.com/file/d/1WbGlfR2kXwPAjjYOjp7IMCKdwcGEWcM9/view" target="_blank" rel="noopener noreferrer" class="watch-btn" aria-label="Watch PENSOL documentary film">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              Watch Here
+            </a>
+            <span class="tag-pill">A Documentary Film</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 2: BAYAR CEPAT -->
+      <article class="project-card" role="listitem" aria-label="Bayar Cepat Short Film 2025">
+        <div class="project-thumb">
+          <!-- REPLACE: Place image 'bayar_cepat.jpeg' inside 'images' folder -->
+          <img
+            src="images/bayar_cepat.jpeg"
+            alt="Bayar Cepat: Cost of Convenience — An aesthetics-driven short film blending visual artistry with meaningful storytelling"
+            loading="lazy"
+          />
+          <div class="project-thumb-overlay">
+            <a href="https://drive.google.com/file/d/1MeGGmEoy0qKfKmACjcC8I0ZjBDOPvgto/view" target="_blank" rel="noopener noreferrer" class="play-btn" aria-label="Watch Bayar Cepat short film">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </a>
+          </div>
+          <div class="project-year-badge" aria-label="Year 2025">2025</div>
+          <div class="project-type-badge">Short Film</div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">BAYAR CEPAT:<br>Cost of Convenience</h3>
+          <p class="project-role">Assistant Director &nbsp;·&nbsp; DOP &nbsp;·&nbsp; Cameraman &nbsp;·&nbsp; Storyboard &nbsp;·&nbsp; Shootingboard Artist</p>
+          <p class="project-desc">
+            Bayar Cepat is an aesthetics-driven short film that blends visual artistry with meaningful storytelling.
+            It explores the interplay of light, color, and composition to evoke emotional resonance and provoke audience
+            thought. Through carefully crafted visuals, symbolic elements, and subtle narratives.
+          </p>
+          <p class="project-meta">Produced for EMC2213 Management and Presentation of Aesthetic Presentation</p>
+          <div class="project-footer">
+            <a href="https://drive.google.com/file/d/1MeGGmEoy0qKfKmACjcC8I0ZjBDOPvgto/view" target="_blank" rel="noopener noreferrer" class="watch-btn" aria-label="Watch Bayar Cepat short film">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              Watch Here
+            </a>
+            <span class="tag-pill">A Short Film</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 3: Beat the Clock -->
+      <article class="project-card" role="listitem" aria-label="Beat the Clock TV Show">
+        <div class="project-thumb">
+          <!-- REPLACE: Place image 'beat_the_clock.jpeg' inside 'images' folder -->
+          <img
+            src="images/beat_the_clock.jpeg"
+            alt="Beat the Clock — A humour-driven TV show produced for Broadcast Journalism"
+            loading="lazy"
+          />
+          <div class="project-thumb-overlay">
+            <a href="#" class="play-btn" aria-label="Watch Beat the Clock TV show">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </a>
+          </div>
+          <div class="project-type-badge">TV Show</div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">BEAT THE CLOCK</h3>
+          <p class="project-role">Broadcast Journalism Production</p>
+          <p class="project-desc">
+            A humour-driven TV show concept that combines entertainment with real-world journalism challenges.
+            Contestants race against the clock to break, verify, and broadcast breaking news stories in a high-energy,
+            fast-paced studio environment — testing media skills under pressure.
+          </p>
+          <p class="project-meta">Produced for EMC1313 Broadcast Journalism</p>
+          <div class="project-footer">
+            <a href="#" class="watch-btn" aria-label="Watch Beat the Clock TV show">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              Watch Here
+            </a>
+            <span class="tag-pill">TV Show</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 4: Integrity PSA -->
+      <article class="project-card" role="listitem" aria-label="Integrity PSA Short Drama">
+        <div class="project-thumb">
+          <!-- REPLACE: Place image 'INTEGRITY_PSA.jpeg' inside 'images' folder -->
+          <img
+            src="images/INTEGRITY_PSA.jpeg"
+            alt="Integrity PSA: Little Choices Big Impact — A short drama on integrity and anti-corruption"
+            loading="lazy"
+          />
+          <div class="project-thumb-overlay">
+            <a href="#" class="play-btn" aria-label="Watch Integrity PSA short drama">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </a>
+          </div>
+          <div class="project-type-badge">Short Drama</div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">INTEGRITY PSA:<br>Little Choices, Big Impact</h3>
+          <p class="project-role">Short Drama Production</p>
+          <p class="project-desc">
+            A compelling short drama exploring how everyday choices shape a person's integrity. The narrative
+            follows characters navigating moral dilemmas in academic and professional settings, reinforcing the
+            message that small acts of honesty or corruption collectively define character and society.
+          </p>
+          <p class="project-meta">Produced for MPU3323 Kursus Integriti dan Anti Rasuah</p>
+          <div class="project-footer">
+            <a href="#" class="watch-btn" aria-label="Watch Integrity PSA short drama">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              Watch Here
+            </a>
+            <span class="tag-pill">Short Drama</span>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /projects-grid -->
+
+    <!-- Extras Ticker Container -->
+    <div class="extras-ticker-container reveal">
+      <div class="extras-ticker-track" role="list" aria-label="Extra video projects and behind the scenes">
+
+        <!-- ================= SET A (Original 6 Items) ================= -->
+        <div class="extra-card" role="listitem">
+          <div class="extra-thumb">
+            <img src="images/behindthescene (1).jpeg" alt="Behind the scenes production setup" loading="lazy" />
+          </div>
+          <div class="extra-label">Production BTS 1<br><span style="color:var(--red);font-size:0.65rem;">Behind the Scenes</span></div>
+        </div>
+
+        <div class="extra-card" role="listitem">
+          <div class="extra-thumb">
+            <img src="images/behindthescene (2).jpeg" alt="Behind the scenes camera setup" loading="lazy" />
+          </div>
+          <div class="extra-label">Production BTS 2<br><span style="color:var(--red);font-size:0.65rem;">Behind the Scenes</span></div>
+        </div>
+
+        <div class="extra-card" role="listitem">
+          <div class="extra-thumb">
+            <img src="images/behindthescene (3).jpeg" alt="Behind the scenes crew recording" loading="lazy" />
+          </div>
+          <div class="extra-label">Production BTS 3<br><span style="color:var(--red);font-size:0.65rem;">Behind the Scenes</span></div>
+        </div>
+
+        <div class="extra-card" role="listitem">
+          <div class="extra-thumb">
+            <img src="images/behindthescene (4).jpeg" alt="Behind the scenes media event" loading="lazy" />
+          </div>
+          <div class="extra-label">Production BTS 4<br><span style="color:var(--red);font-size:0.65rem;">Behind the Scenes</span></div>
+        </div>
+
+        <div class="extra-card" role="listitem">
+          <div class="extra-thumb">
+            <img src="images/behindthescenesss (1).jpeg" alt="Behind the scenes recording session" loading="lazy" />
+          </div>
+          <div class="extra-label">Production BTS 5<br><span style="color:var(--red);font-size:0.65rem;">Behind the Scenes</span></div>
+        </div>
+
+        <div class="extra-card" role="listitem">
+          <div class="extra-thumb">
+            <img src="images/behindthescenesss (2).jpeg" alt="Behind the scenes camera frame" loading="lazy" />
+          </div>
+          <div class="extra-label">Production BTS 6<br><span style="color:var(--red);font-size:0.65rem;">Behind the Scenes</span></div>
+        </div>
+
+        <!-- ================= SET B (Duplicate for seamless loop) ================= -->
+        <div class="extra-card" role="listitem" aria-hidden="true">
+          <div class="extra-thumb">
+            <img src="images/behindthescene (1).jpeg" alt="Behind the scenes production setup" loading="lazy" />
+          </div>
+          <div class="extra-label">Production BTS 1<br><span style="color:var(--red);font-size:0.65rem;">Behind the Scenes</span></div>
+        </div>
+
+        <div class="extra-card" role="listitem" aria-hidden="true">
+          <div class="extra-thumb">
+            <img src="images/behindthescene (2).jpeg" alt="Behind the scenes camera setup" loading="lazy" />
+          </div>
+          <div class="extra-label">Production BTS 2<br><span style="color:var(--red);font-size:0.65rem;">Behind the Scenes</span></div>
+        </div>
+
+        <div class="extra-card" role="listitem" aria-hidden="true">
+          <div class="extra-thumb">
+            <img src="images/behindthescene (3).jpeg" alt="Behind the scenes crew recording" loading="lazy" />
+          </div>
+          <div class="extra-label">Production BTS 3<br><span style="color:var(--red);font-size:0.65rem;">Behind the Scenes</span></div>
+        </div>
+
+        <div class="extra-card" role="listitem" aria-hidden="true">
+          <div class="extra-thumb">
+            <img src="images/behindthescene (4).jpeg" alt="Behind the scenes media event" loading="lazy" />
+          </div>
+          <div class="extra-label">Production BTS 4<br><span style="color:var(--red);font-size:0.65rem;">Behind the Scenes</span></div>
+        </div>
+
+        <div class="extra-card" role="listitem" aria-hidden="true">
+          <div class="extra-thumb">
+            <img src="images/behindthescenesss (1).jpeg" alt="Behind the scenes recording session" loading="lazy" />
+          </div>
+          <div class="extra-label">Production BTS 5<br><span style="color:var(--red);font-size:0.65rem;">Behind the Scenes</span></div>
+        </div>
+
+        <div class="extra-card" role="listitem" aria-hidden="true">
+          <div class="extra-thumb">
+            <img src="images/behindthescenesss (2).jpeg" alt="Behind the scenes camera frame" loading="lazy" />
+          </div>
+          <div class="extra-label">Production BTS 6<br><span style="color:var(--red);font-size:0.65rem;">Behind the Scenes</span></div>
+        </div>
+
+      </div><!-- /extras-ticker-track -->
+    </div><!-- /extras-ticker-container -->
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 5 — DIGITAL STORYTELLING / GALLERY
+     ============================================================ -->
+<section id="gallery" class="section-pad" aria-label="Digital Storytelling and Social Media Work">
+  <div class="container">
+
+    <div class="reveal">
+      <p class="section-label">Creative Work</p>
+      <h2 class="section-title">DIGITAL <span>STORYTELLING</span></h2>
+      <p class="section-subtitle">News graphics, brand design, and social media content that connects.</p>
+    </div>
+
+    <!-- Gallery Tabs -->
+    <div class="gallery-tabs reveal" role="tablist" aria-label="Gallery categories">
+      <button class="gallery-tab active" data-target="panel-convocation" role="tab" aria-selected="true" aria-controls="panel-convocation" id="tab-convocation">
+        Live Event Broadcasts (AIU Convocation)
+      </button>
+      <button class="gallery-tab" data-target="panel-colloquium" role="tab" aria-selected="false" aria-controls="panel-colloquium" id="tab-colloquium">
+        PR Case Study Colloquium
+      </button>
+      <button class="gallery-tab" data-target="panel-threezeros" role="tab" aria-selected="false" aria-controls="panel-threezeros" id="tab-threezeros">
+        3 Zeros Club PR Campaign
+      </button>
+      <button class="gallery-tab" data-target="panel-brands" role="tab" aria-selected="false" aria-controls="panel-brands" id="tab-brands">
+        Designing Brands, Building Identity
+      </button>
+      <button class="gallery-tab" data-target="panel-news" role="tab" aria-selected="false" aria-controls="panel-news" id="tab-news">
+        Digital News Storytelling
+      </button>
+    </div>
+
+    <!-- Panel 1: News Graphics -->
+    <div class="gallery-panel" id="panel-news" role="tabpanel" aria-labelledby="tab-news">
+
+      <!-- Intro Card with Drive Link -->
+      <div class="gallery-intro-card reveal" style="margin-bottom:24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+          <div style="flex: 1; min-width: 280px;">
+            <h4 style="font-family:var(--font-display); font-size:1.15rem; color:var(--black); text-transform:uppercase; margin-bottom:8px; letter-spacing:0.06em;">Digital News Storytelling</h4>
+            <p style="font-size:0.85rem; color:#555; line-height:1.7; margin:0;">
+              <strong style="color:var(--red);">Role:</strong> Journalist &amp; Digital Content Creator &nbsp;·&nbsp;
+              Crafted digital news layouts, news banners, social graphics, and investigative storytelling visuals for LoopBD News platforms.
+            </p>
+          </div>
+          <div style="margin-top: 8px;">
+            <a href="https://drive.google.com/drive/folders/1bN9vbiw5bDsLksrhaXGnxcmBPhZWh8Hp" target="_blank" class="watch-btn" style="background:var(--red); color:var(--white); box-shadow: 0 4px 15px rgba(200, 16, 46, 0.2); text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              View Full Work Folder
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-grid" aria-label="LoopBD News digital news graphics" style="display: flex; justify-content: center; max-width: 500px; margin: 0 auto;">
+
+        <div class="gallery-item reveal delay-1" aria-label="LoopBD News — Digital news storytelling post" style="width: 100%;">
+          <img src="images/stroytelling.jpeg" alt="LoopBD News — Digital news storytelling post graphic" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Digital News Storytelling</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Panel 2: Brand Design -->
+    <div class="gallery-panel" id="panel-brands" role="tabpanel" aria-labelledby="tab-brands">
+      
+      <!-- Intro Card with Drive Link -->
+      <div class="gallery-intro-card reveal" style="margin-bottom:24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+          <div style="flex: 1; min-width: 280px;">
+            <h4 style="font-family:var(--font-display); font-size:1.15rem; color:var(--black); text-transform:uppercase; margin-bottom:8px; letter-spacing:0.06em;">Designing Brands, Building Identity</h4>
+            <p style="font-size:0.85rem; color:#555; line-height:1.7; margin:0;">
+              <strong style="color:var(--red);">Role:</strong> Graphic Designer &nbsp;·&nbsp;
+              Created official event posters, national day celebration graphics, and branding campaign materials for campus events and student communities at AIU.
+            </p>
+          </div>
+          <div style="margin-top: 8px;">
+            <a href="https://drive.google.com/drive/folders/19CXkMxhUDgShn5tLDFCwYPEAkI8COO2b" target="_blank" class="watch-btn" style="background:var(--red); color:var(--white); box-shadow: 0 4px 15px rgba(200, 16, 46, 0.2); text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              View Full Work Folder
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-grid" aria-label="AIU club brand design and event graphics">
+
+        <div class="gallery-item reveal delay-1" aria-label="PR Campaign Poster design">
+          <img src="images/PR CAMPAIGN POSTER.png" alt="PR Campaign Poster — Graphic design for campus public relations campaign" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>PR Campaign · Poster</span></div>
+        </div>
+
+        <div class="gallery-item reveal delay-2" aria-label="Ramadan Wish 2026 greeting design">
+          <img src="images/Ramadan wish 2026.jpg" alt="Ramadan Wish 2026 — Islamic greeting social media post" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Ramadan 2026 · Greeting</span></div>
+        </div>
+
+        <div class="gallery-item reveal delay-3" aria-label="Chinese New Year greeting poster design">
+          <img src="images/Chinese New Year.png" alt="Chinese New Year — Cultural celebration design and greeting graphic" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Chinese New Year · Graphic</span></div>
+        </div>
+
+        <div class="gallery-item reveal delay-4" aria-label="MediaTech Class poster design">
+          <img src="images/MediaTech Class.png" alt="MediaTech Class Workshop — Student training and workshop promotional poster" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>MediaTech Class · Workshop</span></div>
+        </div>
+
+        <div class="gallery-item reveal delay-5" aria-label="Birthday celebration greeting poster design">
+          <img src="images/Birthday.PNG" alt="Birthday Greeting — Celebration graphic design post" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Birthday Wish · Design</span></div>
+        </div>
+
+        <div class="gallery-item reveal delay-6" aria-label="Sports Medal Design layout">
+          <img src="images/Sports Medal Design.png" alt="Sports Medal Design — Graphic design for sports competition medals" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Sports Medal · Design</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Panel 3: Live Event Broadcasts (Convocation 2024) -->
+    <div class="gallery-panel active" id="panel-convocation" role="tabpanel" aria-labelledby="tab-convocation">
+      <div class="gallery-intro-card reveal">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+          <div style="flex: 1; min-width: 280px;">
+            <h4 style="font-family:var(--font-display); font-size:1.15rem; color:var(--black); text-transform:uppercase; margin-bottom:8px; letter-spacing:0.06em;">4th AIU Convocation Ceremony 2024</h4>
+            <p style="font-size:0.85rem; color:#555; line-height:1.7; margin:0;">
+              <strong style="color:var(--red);">Role:</strong> Camera Operator &amp; Live Broadcast Production Team &nbsp;·&nbsp;
+              Operated camera equipment for live proceedings; collaborated with the media team on framing, shot composition, and live recording in a high-pressure formal environment.
+            </p>
+          </div>
+          <div style="margin-top: 8px;">
+            <a href="https://www.youtube.com/live/46ppTcCRt4g?is=IhenTwxRYt92buiY" target="_blank" class="watch-btn" style="background:var(--red); color:var(--white); box-shadow: 0 4px 15px rgba(200, 16, 46, 0.2);">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.871.508 9.388.508 9.388.508s7.517 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              Watch Live Broadcast
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-grid" aria-label="4th AIU Convocation Ceremony event production photos">
+
+        <div class="gallery-item" aria-label="AIU Convocation production photo 1">
+          <img src="images/convo (1).jpeg" alt="4th AIU Convocation Ceremony 2024 — Camera Operator on ground" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>On The Ground · Camera Operator</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="AIU Convocation production photo 2">
+          <img src="images/convo (2).jpeg" alt="4th AIU Convocation Ceremony 2024 — Graduation procession" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>The Procession · Live Broadcast</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="AIU Convocation production photo 3">
+          <img src="images/convo (3).jpeg" alt="4th AIU Convocation Ceremony 2024 — Hall setup and crowd" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Hall Coverage · Wide Shot</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="AIU Convocation production photo 4">
+          <img src="images/convo (4).jpeg" alt="4th AIU Convocation Ceremony 2024 — Ceremony on stage" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Stage Frame · Ceremony 2024</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="AIU Convocation production photo 5">
+          <img src="images/convo (5).jpeg" alt="4th AIU Convocation Ceremony 2024 — Media team group" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>BMC Media Crew · Team Shot</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="AIU Convocation production photo 6">
+          <img src="images/convo (6).jpeg" alt="4th AIU Convocation Ceremony 2024 — Media crew in uniform" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Crew Uniform · Behind The Lens</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="AIU Convocation production photo 7">
+          <img src="images/convo (7).jpeg" alt="4th AIU Convocation Ceremony 2024 — Broadcast monitor" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Live Feed · Broadcast Control</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="AIU Convocation production photo 8">
+          <img src="images/convo (8).jpeg" alt="4th AIU Convocation Ceremony 2024 — Technical operations" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Technical Ops · High Pressure</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="AIU Convocation production photo 9">
+          <img src="images/convo (9).jpeg" alt="4th AIU Convocation Ceremony 2024 — Post event coverage" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Post Coverage · AIU Convo 2024</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Panel 4: PR Case Study Colloquium -->
+    <div class="gallery-panel" id="panel-colloquium" role="tabpanel" aria-labelledby="tab-colloquium">
+
+      <!-- Cover Photo -->
+      <div class="colloquium-hero reveal" style="position:relative; border-radius:var(--radius); overflow:hidden; margin-bottom:24px; aspect-ratio:21/9;">
+        <img src="images/main cover.jpeg" alt="PR Case Study Colloquium — The Skokong Reality Is Quite Disturbing: Meta Data Center Crisis" style="width:100%; height:100%; object-fit:cover; display:block; filter:brightness(0.85) contrast(1.05);" loading="lazy" />
+        <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.2) 50%, transparent 100%);"></div>
+        <div style="position:absolute; bottom:24px; left:24px; z-index:2;">
+          <span style="display:inline-block; background:var(--red); color:var(--white); font-family:var(--font-display); font-size:0.65rem; letter-spacing:0.15em; padding:4px 12px; border-radius:3px; margin-bottom:10px;">4TH PANELIST</span>
+          <h3 style="font-family:var(--font-display); font-size:clamp(1.1rem, 3vw, 1.6rem); color:var(--white); text-transform:uppercase; letter-spacing:0.04em; line-height:1.2; margin:0;">PR Case Study Colloquium</h3>
+          <p style="font-size:0.82rem; color:rgba(255,255,255,0.7); margin-top:6px; max-width:600px; line-height:1.5;">&ldquo;The Skokong Reality Is Quite Disturbing: Meta Data Center Crisis&rdquo;</p>
+        </div>
+      </div>
+
+      <!-- Description Card -->
+      <div class="gallery-intro-card reveal" style="margin-bottom:24px;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px;">
+          <div style="flex:1; min-width:280px;">
+            <h4 style="font-family:var(--font-display); font-size:1.1rem; color:var(--black); text-transform:uppercase; margin-bottom:8px; letter-spacing:0.06em;">Public Relations Case Study Colloquium</h4>
+            <p style="font-size:0.85rem; color:#555; line-height:1.7; margin:0;">
+              <strong style="color:var(--red);">Role:</strong> 4th Panelist &nbsp;·&nbsp;
+              Analyzed Meta&rsquo;s stakeholder and media management during the data center crisis. Evaluated the roles of local communities, government, environmental groups, and media in shaping public perception, and assessed Meta&rsquo;s crisis communication strategies using public relations principles.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event Photos Grid -->
+      <div class="gallery-grid" aria-label="PR Case Study Colloquium event photos">
+
+        <div class="gallery-item" aria-label="Colloquium event photo 1">
+          <img src="images/pr_case (1).jpeg" alt="PR Case Study Colloquium — Event photo 1" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Colloquium · Presentation</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="Colloquium event photo 2">
+          <img src="images/pr_case (2).jpeg" alt="PR Case Study Colloquium — Event photo 2" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Colloquium · Panel Discussion</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="Colloquium event photo 3">
+          <img src="images/pr_case (3).jpeg" alt="PR Case Study Colloquium — Event photo 3" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Colloquium · Q&amp;A Session</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="Colloquium event photo 4">
+          <img src="images/pr_case (4).jpeg" alt="PR Case Study Colloquium — Event photo 4" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Colloquium · Group Photo</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Panel 5: 3 Zeros Club PR Campaign -->
+    <div class="gallery-panel" id="panel-threezeros" role="tabpanel" aria-labelledby="tab-threezeros">
+
+      <!-- Cover Photo -->
+      <div class="colloquium-hero reveal" style="position:relative; border-radius:var(--radius); overflow:hidden; margin-bottom:24px; aspect-ratio:21/9;">
+        <img src="images/socialbusiness (1).jpeg" alt="3 Zeros Club PR Campaign cover" style="width:100%; height:100%; object-fit:cover; object-position:center bottom; display:block; filter:brightness(0.85) contrast(1.05);" loading="lazy" />
+        <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.2) 50%, transparent 100%);"></div>
+        <div style="position:absolute; bottom:24px; left:24px; z-index:2;">
+          <span style="display:inline-block; background:var(--red); color:var(--white); font-family:var(--font-display); font-size:0.65rem; letter-spacing:0.15em; padding:4px 12px; border-radius:3px; margin-bottom:10px;">CAMPAIGN PLANNING &amp; CONTENT DEVELOPMENT</span>
+          <h3 style="font-family:var(--font-display); font-size:clamp(1.1rem, 3vw, 1.6rem); color:var(--white); text-transform:uppercase; letter-spacing:0.04em; line-height:1.2; margin:0;">3 Zeros Club PR Campaign</h3>
+          <p style="font-size:0.82rem; color:rgba(255,255,255,0.7); margin-top:6px; max-width:600px; line-height:1.5;">An integrated promotional campaign strategy to raise awareness and encourage student participation on campus.</p>
+        </div>
+      </div>
+
+      <!-- Description Card -->
+      <div class="gallery-intro-card reveal" style="margin-bottom:24px;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px;">
+          <div style="flex:1; min-width:280px;">
+            <h4 style="font-family:var(--font-display); font-size:1.1rem; color:var(--black); text-transform:uppercase; margin-bottom:8px; letter-spacing:0.06em;">3 Zeros Club PR Campaign</h4>
+            <p style="font-size:0.85rem; color:#555; line-height:1.7; margin:0;">
+              <strong style="color:var(--red);">Role:</strong> Campaign Planner, Content Developer &amp; Promotional Executer &nbsp;·&nbsp;
+              Planned and executed a public relations campaign to promote the 3 Zeros Club on campus. Developed an integrated promotional strategy using communication materials (posters, social media content, digital displays, and on-campus promotional activities) to increase awareness and encourage student participation, ensuring consistent messaging and effective audience engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event Photos Grid -->
+      <div class="gallery-grid no-live-badge" aria-label="3 Zeros Club PR Campaign event photos">
+
+        <div class="gallery-item" aria-label="3 Zeros Campaign event photo 1">
+          <img src="images/socialbusiness (2).jpeg" alt="3 Zeros Club PR Campaign — Event photo 1" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Campaign · Launch Event</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="3 Zeros Campaign event photo 2">
+          <img src="images/socialbusiness (3).jpeg" alt="3 Zeros Club PR Campaign — Event photo 2" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Campaign · Promotional Material</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="3 Zeros Campaign event photo 3">
+          <img src="images/socialbusiness (4).jpeg" alt="3 Zeros Club PR Campaign — Event photo 3" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Campaign · Student Engagement</span></div>
+        </div>
+
+        <div class="gallery-item" aria-label="3 Zeros Campaign event photo 4">
+          <img src="images/socialbusiness (5).jpeg" alt="3 Zeros Club PR Campaign — Event photo 4" loading="lazy" />
+          <div class="gallery-item-overlay"></div>
+          <div class="gallery-caption"><span>Campaign · Team Group</span></div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 6 — SOCIAL MEDIA MANAGER
+     ============================================================ -->
+<section id="social" class="section-pad" aria-label="Social Media Manager Experience">
+  <div class="container">
+
+    <div class="social-layout">
+
+      <!-- Left: Text -->
+      <div class="reveal-left">
+        <p class="section-label">Digital Strategy</p>
+        <h2 class="section-title" style="color:var(--white);">SOCIAL MEDIA <span>MANAGER</span></h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.45);margin-bottom:28px;">
+          AIU Residence Council &nbsp;|&nbsp; Instagram
+        </p>
+        <p class="social-text">
+          I have one year of experience as the Social Media Manager of the AIU Residence Council at Albukhary
+          International University, where I developed strong skills in digital communication, content creation,
+          visual design, and social media management. I worked on content planning, event promotion, audience
+          engagement, and performance monitoring, while consistently ensuring clear and timely communication with
+          the student residential community. This experience strengthened my creativity, strategic thinking,
+          teamwork, and leadership skills, helping me grow into a more confident and results-driven media professional.
+        </p>
+      </div>
+
+      <!-- Right: Post Gallery -->
+      <div class="social-posts-grid reveal-right" aria-label="AIU Residence Council social media posts">
+
+        <div class="social-post" aria-label="ARC Community Engagement post">
+          <img src="images/socialmediamanager (1).jpeg" alt="AIU Residence Council — Community outreach and social media campaign" loading="lazy" />
+          <div class="social-post-label">Outreach &amp; Engagement</div>
+        </div>
+
+        <div class="social-post" aria-label="ARC Event Promotion post">
+          <img src="images/socialmediamanager (2).jpeg" alt="AIU Residence Council — Event promotion and visual design post" loading="lazy" />
+          <div class="social-post-label">Event Promotion</div>
+        </div>
+
+        <div class="social-post" aria-label="ARC Digital Marketing post">
+          <img src="images/socialmediamanager (3).jpeg" alt="AIU Residence Council — Social media layout and campaign content" loading="lazy" />
+          <div class="social-post-label">Digital Design</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 7 — PERSONAL CONTENT CREATION
+     ============================================================ -->
+<section id="content-creation" class="section-pad" aria-label="Personal Content Creation">
+  <div class="container">
+
+    <div class="reveal">
+      <p class="section-label">Creator Profile</p>
+      <h2 class="section-title">PERSONAL <span>CONTENT</span></h2>
+      <p class="section-subtitle">Personal Account — Content Creator | Social Media Platforms</p>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar" role="list" aria-label="Social media statistics">
+
+      <div class="stat-card reveal delay-1" role="listitem" aria-label="721 Followers">
+        <div class="stat-num">
+          <span class="stat-value" data-target="721" data-suffix="">0</span>
+        </div>
+        <div class="stat-label">Followers</div>
+      </div>
+
+      <div class="stat-card reveal delay-2" role="listitem" aria-label="582 Following">
+        <div class="stat-num">
+          <span class="stat-value" data-target="582" data-suffix="">0</span>
+        </div>
+        <div class="stat-label">Following</div>
+      </div>
+
+      <div class="stat-card reveal delay-3" role="listitem" aria-label="155 Posts">
+        <div class="stat-num">
+          <span class="stat-value" data-target="155" data-suffix="">0</span>
+        </div>
+        <div class="stat-label">Posts</div>
+      </div>
+
+      <div class="stat-card reveal delay-4" role="listitem" aria-label="2.2K Views in the last 30 days">
+        <div class="stat-num">
+          <span class="stat-value" data-target="2.2" data-suffix="">0</span><span class="stat-suffix" style="color:var(--red);">K</span>
+        </div>
+        <div class="stat-label">Views (30 days)</div>
+      </div>
+
+      <div class="stat-card reveal delay-5" role="listitem" aria-label="13.5K Views on featured reel">
+        <div class="stat-num">
+          <span class="stat-value" data-target="13.5" data-suffix="">0</span><span class="stat-suffix" style="color:var(--red);">K</span>
+        </div>
+        <div class="stat-label">Featured Reel</div>
+      </div>
+
+    </div>
+
+    <!-- Creator Layout: Quote & Photo -->
+    <div class="creator-layout reveal">
+      <!-- Quote Block -->
+      <div class="creator-quote" style="margin: 0;">
+        <p>
+          "I don't just post content – I build conversations. My videos consistently engage thousands of viewers,
+          turning casual scrollers into an active community. By understanding audience psychology and digital trends,
+          I've grown a diverse following and strengthened my presence across multiple online platforms."
+        </p>
+      </div>
+
+      <!-- Creator Photo -->
+      <div class="creator-img-wrap">
+        <img src="images/personal_content.jpeg" alt="Mahamud Al Hasan - Personal content creator profile photo" loading="lazy" />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SECTION 8 — CONTACT / FOOTER
+     ============================================================ -->
+<section id="contact" class="section-pad" aria-label="Contact Mahamud Al Hasan">
+  <div class="container">
+
+    <div class="contact-layout">
+
+      <!-- Left: Info -->
+      <div class="reveal-left">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title" style="color:var(--white);">LET'S<br><span>CONNECT</span></h2>
+        <p class="contact-tagline">
+          "I don't just create visuals – I build experiences. Now I'm ready to grow, learn, and create at the next level."
+        </p>
+
+        <div class="contact-details">
+
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="white" stroke-width="2" style="fill:none;stroke:#C8102E;"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">Email</span>
+              <a href="mailto:mahamud.hasan@student.aiu.edu.my" class="contact-item-value" aria-label="Send email to mahamud.hasan@student.aiu.edu.my">
+                mahamud.hasan@student.aiu.edu.my
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--red)"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.86 5.86l.72-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">Phone</span>
+              <a href="tel:+60167036103" class="contact-item-value" aria-label="Call Mahamud at +60167036103">
+                +60 16-703 6103
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--red)"><path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m4 4V7"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">LinkedIn</span>
+              <a href="https://linkedin.com/in/mahamud-al-hasan" class="contact-item-value" target="_blank" rel="noopener noreferrer" aria-label="Visit Mahamud Al Hasan LinkedIn profile (opens in new tab)">
+                Mahamud Al Hasan
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--red)"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="#111" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#111" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">Instagram</span>
+              <a href="https://instagram.com/mahamud_al_hasan" class="contact-item-value" target="_blank" rel="noopener noreferrer" aria-label="Visit Mahamud Al Hasan Instagram profile (opens in new tab)">
+                @mahamud_al_hasan
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Social Icons Row -->
+        <div class="social-icons-row" aria-label="Social media links">
+          <a href="https://linkedin.com/in/mahamud-al-hasan" class="social-icon-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://instagram.com/mahamud_al_hasan" class="social-icon-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+          <a href="mailto:mahamud.hasan@student.aiu.edu.my" class="social-icon-link" aria-label="Send email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </a>
+          <a href="tel:+60167036103" class="social-icon-link" aria-label="Call Mahamud">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.86 5.86l.72-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="reveal-right">
+        <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+          <h3>Send a Message</h3>
+
+          <div class="form-group">
+            <label for="contact-name">Your Name</label>
+            <input
+              type="text"
+              id="contact-name"
+              name="name"
+              placeholder="e.g. Ahmad Razif"
+              required
+              autocomplete="name"
+              aria-required="true"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Email Address</label>
+            <input
+              type="email"
+              id="contact-email"
+              name="email"
+              placeholder="your@email.com"
+              required
+              autocomplete="email"
+              aria-required="true"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              placeholder="Tell me about your project or collaboration idea..."
+              required
+              aria-required="true"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="form-submit" aria-label="Send message">
+            Send Message
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Bar -->
+  <div class="footer-bar">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; 2025 <span>Mahamud Al Hasan</span>. All rights reserved. Media &amp; Communication Portfolio.
+      </p>
+      <button id="back-to-top" class="back-to-top" aria-label="Back to top of page">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+</section>
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
